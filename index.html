@@ -1,0 +1,401 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>collabatwork — Microsoft-Teams-Schulungen für KMU</title>
+<meta name="description" content="Microsoft-Teams-Schulungen für kleine und mittlere Unternehmen. Fokus Kanton Bern, online in der ganzen Schweiz.">
+<link rel="canonical" href="https://collabatwork.ch/">
+<link rel="alternate" hreflang="de" href="https://collabatwork.ch/">
+<link rel="alternate" hreflang="en" href="https://collabatwork.ch/en.html">
+<meta property="og:title" content="collabatwork — Microsoft-Teams-Schulungen für KMU">
+<meta property="og:description" content="Ihr Team hat Teams. Jetzt fehlt nur noch das Zusammenarbeiten.">
+<meta property="og:type" content="website">
+<meta property="og:locale" content="de_CH">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Cg fill='none' stroke-width='12' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpath d='M69 17.1A38 38 0 1 0 69 82.9' stroke='%231A1917'/%3E%3Cpath d='M44 32 66 50 44 68' stroke='%23C4653A'/%3E%3C/g%3E%3C/svg%3E">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<!--
+  collabatwork.ch — deutsche Startseite
+  Erzeugt aus der Arbeitsfassung "collabatwork DE v4.dc.html". Änderungen bitte
+  in beiden Sprachdateien nachziehen (index.html und en.html).
+
+  Aufbau      : Kopfzeile, sieben Abschnitte, Fusszeile. Jeder Abschnitt unten kommentiert.
+  Gestaltung  : Stile stehen absichtlich inline, damit die Seite ohne zweite Anfrage
+                dargestellt wird. Übergreifende Regeln (Menü, Hover, Rechtsseiten): style.css
+  Schrift     : Systemschrift des Geräts, es wird keine Schrift nachgeladen
+  Farben      : Sand #FAF7F2 · Bänder #FFFFFF · Text #1A1917 · Fliesstext #3D3B36
+                Leise #8E8B84 · Haarlinie #E2DDD4 · Signal (Marke) #C4653A · Dunkelfeld #1A1917
+  Raster      : max. 1180px breit, Rand clamp(20px,4vw,40px), Abstand clamp(56px,8vw,96px)
+  Verhalten   : site.js — mobiles Menü und Kontaktformular
+  Hosting     : Infomaniak, Schweiz. Keine externen Verbindungen, kein PHP nötig
+-->
+<div style="width:100%;background:#FAF7F2">
+
+  <div style="background:#1A1917;color:#B8B4AC;padding:9px 24px;display:flex;gap:12px;align-items:baseline;justify-content:center;flex-wrap:wrap;font-size:13px;line-height:1.5">
+    <span style="color:#C4653A;font-weight:500;letter-spacing:.08em;text-transform:uppercase;font-size:11px">Entwurf</span>
+    <span>Vorabversion. Inhalte und Angaben werden derzeit finalisiert.</span>
+  </div>
+
+  <!-- KOPFZEILE — Logo, Navigation, Sprachumschalter, Menüknopf für Mobil -->
+    <header style="position:sticky;top:0;z-index:40;background:rgba(250,247,242,.94);backdrop-filter:blur(8px);border-bottom:1px solid #E2DDD4">
+    <div style="max-width:1180px;margin:0 auto;padding:0 clamp(20px,4vw,40px);height:76px;display:flex;align-items:center;justify-content:space-between;gap:20px">
+      <a href="#top" style="display:flex;align-items:center;gap:10px;text-decoration:none;flex-shrink:0">
+        <svg width="32" height="32" viewBox="0 0 100 100" fill="none" aria-hidden="true"><path d="M69 17.1A38 38 0 1 0 69 82.9" stroke="#1A1917" stroke-width="12" stroke-linecap="round"></path><path d="M44 32 66 50 44 68" stroke="#C4653A" stroke-width="12" stroke-linecap="round" stroke-linejoin="round"></path></svg>
+        <span style="font-size:21px;font-weight:600;letter-spacing:-.025em">collab<span style="color:#C4653A">atwork</span></span>
+      </a>
+      <nav class="cw-nav" style="display:flex;align-items:center;gap:30px;font-size:15px">
+        <a href="#warum" style="text-decoration:none;color:#5C5A54">Warum</a>
+        <a href="#wie" style="text-decoration:none;color:#5C5A54">Wie</a>
+        <a href="#angebot" style="text-decoration:none;color:#5C5A54">Angebot</a>
+        <a href="#ueber" style="text-decoration:none;color:#5C5A54">Über mich</a>
+        <a href="en.html" style="text-decoration:none;color:#8E8B84;font-size:13px;letter-spacing:.06em;padding-left:30px;border-left:1px solid #E2DDD4">EN</a>
+        <a href="#kontakt" style="text-decoration:none;color:#1A1917;font-weight:500;border-bottom:2px solid #C4653A;padding-bottom:2px">Kontakt</a>
+      </nav>
+      <a class="cw-lang-mob" href="en.html" style="text-decoration:none;margin-left:auto;align-items:center;justify-content:center;height:44px;padding:0 15px;border:1px solid #E2DDD4;border-radius:10px;font-size:13px;font-weight:600;letter-spacing:.06em;color:#5C5A54;flex-shrink:0">EN</a>
+      <button type="button" class="cw-burger" aria-label="Menü" style="display:none;width:44px;height:44px;flex-direction:column;align-items:center;justify-content:center;gap:5px;background:none;border:1px solid #E2DDD4;border-radius:10px;cursor:pointer;padding:0">
+        <span style="width:18px;height:1.5px;background:#1A1917;display:block"></span>
+        <span style="width:18px;height:1.5px;background:#1A1917;display:block"></span>
+      </button>
+    </div>
+    
+      <nav class="cw-mob" style="border-top:1px solid #E2DDD4;padding:4px clamp(20px,4vw,40px) 20px;flex-direction:column">
+        <a href="#warum" style="text-decoration:none;padding:15px 0;border-bottom:1px solid #EDEBE6;font-size:17px">Warum</a>
+        <a href="#wie" style="text-decoration:none;padding:15px 0;border-bottom:1px solid #EDEBE6;font-size:17px">Wie</a>
+        <a href="#angebot" style="text-decoration:none;padding:15px 0;border-bottom:1px solid #EDEBE6;font-size:17px">Angebot</a>
+        <a href="#ueber" style="text-decoration:none;padding:15px 0;border-bottom:1px solid #EDEBE6;font-size:17px">Über mich</a>
+        <a href="#kontakt" style="text-decoration:none;padding:15px 0;border-bottom:1px solid #EDEBE6;font-size:17px;color:#C4653A">Kontakt</a>
+      </nav>
+    
+  </header>
+
+  <main id="top" style="display:block">
+
+    <!-- STARTBEREICH — Signet als Wasserzeichen, Schlagzeile, zwei Knöpfe, Angebotsleiste -->
+    <section style="position:relative;overflow:hidden">
+      <div style="position:relative;max-width:1180px;margin:0 auto;padding:clamp(52px,9vw,104px) clamp(20px,4vw,40px) clamp(32px,5vw,48px)">
+        <div style="display:flex;align-items:center;gap:10px;margin-bottom:clamp(26px,5vw,44px)">
+          <span style="font-size:12px;letter-spacing:.14em;text-transform:uppercase;color:#C4653A;font-weight:600">Microsoft Teams Schulungen für KMU · Fokus Bern</span>
+        </div>
+        <h1 style="margin:0;font-size:clamp(2.5rem,6.6vw,5.2rem);font-weight:700;line-height:1.01;letter-spacing:-.04em;max-width:20ch;text-wrap:pretty">Ihr Team hat Teams.<span style="display:block">Jetzt fehlt nur noch das <span style="border-bottom:.14em solid #C4653A;padding-bottom:.04em">Zusammenarbeiten</span>.</span></h1>
+        <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(min(300px,100%),1fr));gap:clamp(24px,4vw,56px);margin-top:clamp(34px,6vw,58px);align-items:start">
+          <p style="margin:0;font-size:clamp(1.04rem,1.6vw,1.22rem);line-height:1.6;color:#3D3B36;max-width:50ch">Die meisten KMU haben Microsoft Teams längst im Einsatz – und nutzen einen Bruchteil davon. Ich zeige Ihrem Team, wie aus dem Tool echte Zusammenarbeit wird. Verständlich, geduldig, auf Augenhöhe.</p>
+          <div style="display:flex;flex-wrap:wrap;gap:12px;align-items:center">
+            <a href="#kontakt" style="text-decoration:none;background:#C4653A;color:#fff;padding:16px 30px;border-radius:9px;font-size:16px;font-weight:600">Unverbindlich anfragen</a>
+            <a href="#angebot" style="text-decoration:none;color:#1A1917;padding:16px 22px;border-radius:9px;border:1px solid #D8D2C7;font-size:16px;font-weight:500">Was ich anbiete</a>
+          </div>
+        </div>
+      </div>
+      <div style="position:relative;max-width:1180px;margin:0 auto;padding:0 clamp(20px,4vw,40px) clamp(44px,7vw,72px)">
+        <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(min(220px,100%),1fr));gap:0;border-top:1px solid #E2DDD4">
+          <a href="#angebot" style="text-decoration:none;display:flex;gap:14px;align-items:baseline;padding:24px clamp(16px,2vw,28px) 20px 0;border-right:1px solid #E2DDD4">
+            <span style="font-size:13px;color:#C4653A;font-weight:600">01</span>
+            <span style="font-size:1.14rem;font-weight:500;letter-spacing:-.01em">Teams-Grundlagen</span>
+          </a>
+          <a href="#angebot" style="text-decoration:none;display:flex;gap:14px;align-items:baseline;padding:24px clamp(16px,2vw,28px);border-right:1px solid #E2DDD4">
+            <span style="font-size:13px;color:#C4653A;font-weight:600">02</span>
+            <span style="font-size:1.14rem;font-weight:500;letter-spacing:-.01em">Struktur &amp; Einführung</span>
+          </a>
+          <a href="#angebot" style="text-decoration:none;display:flex;gap:14px;align-items:baseline;padding:24px 0 20px clamp(16px,2vw,28px)">
+            <span style="font-size:13px;color:#C4653A;font-weight:600">03</span>
+            <span style="font-size:1.14rem;font-weight:500;letter-spacing:-.01em">Zusammenarbeit mit Externen</span>
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- WARUM — Antrieb (Simon Sinek: Why) -->
+    <section id="warum" style="max-width:1180px;margin:0 auto;padding:clamp(56px,8vw,96px) clamp(20px,4vw,40px)">
+      <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(min(300px,100%),1fr));gap:clamp(28px,5vw,72px)">
+        <div>
+          <div style="font-size:12px;letter-spacing:.14em;text-transform:uppercase;color:#8E8B84;margin-bottom:20px"><span style="color:#C4653A;font-weight:600">01</span> &nbsp;Warum — mein Antrieb</div>
+          <h2 style="margin:0;font-size:clamp(1.7rem,3.4vw,2.5rem);font-weight:700;line-height:1.1;letter-spacing:-.03em;max-width:22ch;text-wrap:pretty">Technik soll Menschen entlasten, nicht überfordern.</h2>
+        </div>
+        <div>
+          <p style="margin:0;font-size:1.08rem;line-height:1.66;color:#3D3B36;max-width:48ch">Zu viele Teams arbeiten mit Werkzeugen, die ihnen niemand erklärt hat. Das kostet jeden Tag Zeit — und es macht Menschen unsicher in ihrer eigenen Arbeit.</p>
+          <p style="margin:18px 0 0;font-size:1.08rem;line-height:1.66;color:#3D3B36;max-width:48ch">Ich bin überzeugt: Niemand muss ein Programm beherrschen, um seine Arbeit gut zu machen. Es braucht nur jemanden, der es verständlich zeigt.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- ZITATFELD — dunkle Fläche, einziger Farbwechsel der Seite -->
+    <section style="background:#1A1917;color:#fff">
+      <div style="max-width:1180px;margin:0 auto;padding:clamp(56px,8vw,96px) clamp(20px,4vw,40px)">
+        <div style="max-width:46ch">
+          <div style="font-size:clamp(1.4rem,3vw,2.1rem);line-height:1.3;font-weight:400;letter-spacing:-.024em">„Mich begeistert nicht die nächste Funktion, sondern der Moment, in dem es klick macht.“</div>
+          <div style="margin-top:30px;padding-top:22px;border-top:1px solid #3A3833;font-size:1.12rem;font-weight:500;color:#fff;letter-spacing:-.01em">Genau dafür gibt es <span style="color:#E08A5B">collabatwork</span>.</div>
+        </div>
+      </div>
+    </section>
+
+    <section style="max-width:1180px;margin:0 auto;padding:clamp(56px,8vw,96px) clamp(20px,4vw,40px)">
+      <div style="font-size:12px;letter-spacing:.14em;text-transform:uppercase;color:#8E8B84;margin-bottom:20px">Kommt Ihnen bekannt vor?</div>
+      <h2 style="margin:0 0 clamp(36px,6vw,60px);font-size:clamp(1.7rem,3.4vw,2.5rem);font-weight:700;line-height:1.1;letter-spacing:-.03em;max-width:20ch;text-wrap:pretty">Das Tool ist da. Die Zusammenarbeit noch nicht.</h2>
+      <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(min(270px,100%),1fr));gap:0;border-top:1px solid #E2DDD4">
+        <div style="padding:28px clamp(20px,3vw,34px) 30px 0;border-right:1px solid #E2DDD4">
+          <div style="font-size:1.22rem;line-height:1.36;font-weight:600;letter-spacing:-.02em;margin-bottom:14px">„Wir mailen uns Dateien hin und her – trotz Teams.“</div>
+          <p style="margin:0;font-size:.98rem;line-height:1.62;color:#5C5A54">Kanäle, geteilte Dateien und gemeinsame Bearbeitung liegen brach, weil niemand gezeigt hat, wie es im Alltag funktioniert.</p>
+        </div>
+        <div style="padding:28px clamp(20px,3vw,34px) 30px;border-right:1px solid #E2DDD4">
+          <div style="font-size:1.22rem;line-height:1.36;font-weight:600;letter-spacing:-.02em;margin-bottom:14px">„Jeder macht es anders, keiner findet was.“</div>
+          <p style="margin:0;font-size:.98rem;line-height:1.62;color:#5C5A54">Ohne gemeinsame Struktur entsteht Wildwuchs. Eine klare, einfache Ordnung spart täglich Zeit und Nerven.</p>
+        </div>
+        <div style="padding:28px 0 30px clamp(20px,3vw,34px)">
+          <div style="font-size:1.22rem;line-height:1.36;font-weight:600;letter-spacing:-.02em;margin-bottom:14px">„Die Hälfte traut sich gar nicht ran.“</div>
+          <p style="margin:0;font-size:.98rem;line-height:1.62;color:#5C5A54">Unsicherheit blockiert. Mit der richtigen Begleitung wird aus Skepsis Routine – und aus Routine echte Entlastung.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- WIE — vier Schritte des Vorgehens (How) -->
+    <section id="wie" style="background:#fff">
+      <div style="max-width:1180px;margin:0 auto;padding:clamp(56px,8vw,96px) clamp(20px,4vw,40px)">
+        <div style="font-size:12px;letter-spacing:.14em;text-transform:uppercase;color:#8E8B84;margin-bottom:20px"><span style="color:#C4653A;font-weight:600">02</span> &nbsp;Wie — so arbeite ich</div>
+        <h2 style="margin:0 0 clamp(36px,6vw,60px);font-size:clamp(1.7rem,3.4vw,2.5rem);font-weight:700;line-height:1.1;letter-spacing:-.03em;max-width:24ch;text-wrap:pretty">Vom ersten Gespräch zur eingespielten Zusammenarbeit.</h2>
+        <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(200px,1fr));gap:clamp(24px,3vw,36px)">
+          <div style="border-top:1px solid #1A1917;padding-top:16px">
+            <div style="font-size:13px;color:#C4653A;font-weight:500;margin-bottom:12px">01</div>
+            <div style="font-size:1.06rem;font-weight:500;margin-bottom:8px">Kennenlernen</div>
+            <p style="margin:0;font-size:.95rem;line-height:1.6;color:#5C5A54">Kurzes Gespräch: Wo steht Ihr Team, wo klemmt es? Kostenlos und unverbindlich.</p>
+          </div>
+          <div style="border-top:1px solid #1A1917;padding-top:16px">
+            <div style="font-size:13px;color:#C4653A;font-weight:500;margin-bottom:12px">02</div>
+            <div style="font-size:1.06rem;font-weight:500;margin-bottom:8px">Zuschnitt</div>
+            <p style="margin:0;font-size:.95rem;line-height:1.6;color:#5C5A54">Ich stelle eine Schulung zusammen, die genau zu Ihrem Alltag passt.</p>
+          </div>
+          <div style="border-top:1px solid #1A1917;padding-top:16px">
+            <div style="font-size:13px;color:#C4653A;font-weight:500;margin-bottom:12px">03</div>
+            <div style="font-size:1.06rem;font-weight:500;margin-bottom:8px">Schulung</div>
+            <p style="margin:0;font-size:.95rem;line-height:1.6;color:#5C5A54">Praxisnah vor Ort oder online – mit echten Beispielen aus Ihrer Arbeit.</p>
+          </div>
+          <div style="border-top:1px solid #1A1917;padding-top:16px">
+            <div style="font-size:13px;color:#C4653A;font-weight:500;margin-bottom:12px">04</div>
+            <div style="font-size:1.06rem;font-weight:500;margin-bottom:8px">Dranbleiben</div>
+            <p style="margin:0;font-size:.95rem;line-height:1.6;color:#5C5A54">Auf Wunsch begleite ich die Einführung, damit das Gelernte auch sitzt.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- WAS — drei Angebote mit Umfangsangabe (What). Keine Preise, alles auf Anfrage -->
+    <section id="angebot" style="max-width:1180px;margin:0 auto;padding:clamp(56px,8vw,96px) clamp(20px,4vw,40px)">
+      <div style="font-size:12px;letter-spacing:.14em;text-transform:uppercase;color:#8E8B84;margin-bottom:20px"><span style="color:#C4653A;font-weight:600">03</span> &nbsp;Was — das Angebot</div>
+      <h2 style="margin:0 0 18px;font-size:clamp(1.7rem,3.4vw,2.5rem);font-weight:700;line-height:1.1;letter-spacing:-.03em;max-width:22ch;text-wrap:pretty">Schulungen, die im Arbeitsalltag ankommen.</h2>
+      <p style="margin:0 0 clamp(36px,6vw,56px);font-size:1.08rem;line-height:1.64;color:#5C5A54;max-width:54ch">Kein Standard-Foliensatz von der Stange. Ich hole Ihr Team bei seinem echten Arbeitsalltag ab – mit Ihren Projekten, Ihren Abläufen, Ihren Fragen.</p>
+
+      <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(min(280px,100%),1fr));gap:clamp(20px,4vw,48px);border-top:1px solid #1A1917;padding:26px 0 34px">
+        <div>
+          <div style="display:flex;gap:18px;align-items:baseline">
+          <span style="font-size:13px;color:#C4653A;font-weight:500">01</span>
+          <h3 style="margin:0;font-size:1.5rem;font-weight:600;letter-spacing:-.024em;line-height:1.2">Teams-Grundlagen</h3>
+        </div>
+          <div style="margin-top:12px;font-size:.86rem;color:#8E8B84;letter-spacing:.01em">Halbtag · 4 bis 12 Personen</div>
+        </div>
+        <p style="margin:0;font-size:1rem;line-height:1.62;color:#3D3B36">Der solide Einstieg für alle. Nach dem Halbtag arbeitet Ihr Team sicher im Alltag.</p>
+        <div style="display:flex;flex-direction:column;gap:9px;font-size:.95rem;color:#5C5A54;line-height:1.5">
+          <div>Kanäle, Chats &amp; Besprechungen</div>
+          <div>Dateien gemeinsam bearbeiten</div>
+          <div>Benachrichtigungen im Griff</div>
+        </div>
+      </div>
+      <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(min(280px,100%),1fr));gap:clamp(20px,4vw,48px);border-top:1px solid #E2DDD4;padding:26px 0 34px">
+        <div>
+          <div style="display:flex;gap:18px;align-items:baseline">
+          <span style="font-size:13px;color:#C4653A;font-weight:500">02</span>
+          <h3 style="margin:0;font-size:1.5rem;font-weight:600;letter-spacing:-.024em;line-height:1.2">Struktur &amp; Einführung</h3>
+        </div>
+          <div style="margin-top:12px;font-size:.86rem;color:#8E8B84;letter-spacing:.01em">Workshop mit Begleitung · Kernteam 3 bis 6 Personen</div>
+        </div>
+        <p style="margin:0;font-size:1rem;line-height:1.62;color:#3D3B36">Wir bauen gemeinsam eine klare Ordnung auf, die zu Ihrer Organisation passt – und begleiten den Rollout.</p>
+        <div style="display:flex;flex-direction:column;gap:9px;font-size:.95rem;color:#5C5A54;line-height:1.5">
+          <div>Team- &amp; Kanalstruktur planen</div>
+          <div>Ablage &amp; Namenskonventionen</div>
+          <div>Begleitung bei der Einführung</div>
+        </div>
+      </div>
+      <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(min(280px,100%),1fr));gap:clamp(20px,4vw,48px);border-top:1px solid #E2DDD4;border-bottom:1px solid #E2DDD4;padding:26px 0 34px">
+        <div>
+          <div style="display:flex;gap:18px;align-items:baseline">
+          <span style="font-size:13px;color:#C4653A;font-weight:500">03</span>
+          <h3 style="margin:0;font-size:1.5rem;font-weight:600;letter-spacing:-.024em;line-height:1.2">Zusammenarbeit mit Externen</h3>
+        </div>
+          <div style="margin-top:12px;font-size:.86rem;color:#8E8B84;letter-spacing:.01em">Halbtag · 4 bis 12 Personen</div>
+        </div>
+        <p style="margin:0;font-size:1rem;line-height:1.62;color:#3D3B36">Kunden und Partner sicher einbinden – ohne dass im Team jemand rätselt, was intern bleibt.</p>
+        <div style="display:flex;flex-direction:column;gap:9px;font-size:.95rem;color:#5C5A54;line-height:1.5">
+          <div>Gäste einladen und verwalten</div>
+          <div>Dateien gezielt freigeben</div>
+          <div>Klare Grenze zwischen intern und extern</div>
+        </div>
+      </div>
+      <p style="margin:30px 0 0;font-size:.98rem;line-height:1.62;color:#5C5A54;max-width:54ch">Jede Schulung wird auf Ihr Team zugeschnitten. Sie erhalten nach dem Kennenlerngespräch eine schriftliche Offerte mit festem Preis.</p>
+    </section>
+
+    <!-- ÜBER MICH — Porträt und Werdegang -->
+    <section id="ueber" style="background:#F2E9DF">
+      <div style="max-width:1180px;margin:0 auto;padding:clamp(56px,8vw,96px) clamp(20px,4vw,40px);display:grid;grid-template-columns:repeat(auto-fit,minmax(min(300px,100%),1fr));gap:clamp(32px,5vw,72px);align-items:start">
+        <div>
+          <img src="timo.webp" width="533" height="800" alt="Timo Steinlin" loading="lazy" decoding="async" style="width:100%;max-width:380px;height:auto;aspect-ratio:4/5;object-fit:cover;display:block;border-radius:12px;background:#F0EBE3">
+          <div style="margin-top:14px;font-size:13px;color:#8E8B84;line-height:1.5;max-width:380px">Timo Steinlin · Inhaber collabatwork</div>
+        </div>
+        <div>
+          <div style="font-size:12px;letter-spacing:.14em;text-transform:uppercase;color:#8E8B84;margin-bottom:20px"><span style="color:#C4653A;font-weight:600">04</span> &nbsp;Über mich</div>
+          <h2 style="margin:0 0 24px;font-size:clamp(1.7rem,3.4vw,2.5rem);font-weight:700;line-height:1.1;letter-spacing:-.03em;max-width:22ch;text-wrap:pretty">Ich erkläre Technik so, dass Menschen mitkommen.</h2>
+          <p style="margin:0;font-size:1.08rem;line-height:1.66;color:#3D3B36;max-width:48ch">Ich bin Timo – IT-Fachmann mit einem Faible fürs Vermitteln. Seit Jahren begleite ich Menschen mit ganz unterschiedlichem Vorwissen dabei, mit digitalen Werkzeugen sicher zu werden.</p>
+          <p style="margin:18px 0 0;font-size:1.08rem;line-height:1.66;color:#3D3B36;max-width:48ch">Vermitteln begleitet mich schon lange. Als Berufsbildner führe ich Lernende durch ihre Ausbildung, an der gibb habe ich als Berufsschullehrer unterrichtet. Beides hat mir gezeigt, wie unterschiedlich Menschen lernen und wie viel ein geduldiges Gegenüber ausmacht.</p>
+          <div style="margin-top:26px;font-size:1rem;color:#8E8B84">— Timo</div>
+        </div>
+      </div>
+    </section>
+
+    <section style="background:#fff">
+      <div style="max-width:1180px;margin:0 auto;padding:clamp(56px,8vw,96px) clamp(20px,4vw,40px)">
+        <div style="font-size:12px;letter-spacing:.14em;text-transform:uppercase;color:#8E8B84;margin-bottom:20px"><span style="color:#C4653A;font-weight:600">05</span> &nbsp;Referenzen</div>
+        <h2 style="margin:0 0 18px;font-size:clamp(1.7rem,3.4vw,2.5rem);font-weight:700;line-height:1.1;letter-spacing:-.03em;max-width:22ch;text-wrap:pretty">Was Teams nach der Schulung sagen.</h2>
+        <p style="margin:0 0 clamp(32px,5vw,52px);font-size:1.06rem;line-height:1.64;color:#5C5A54;max-width:54ch">[Ein Satz zur Einordnung — etwa: Ausschnitte aus Rückmeldungen der letzten Schulungen. Ersetzen, sobald echte Zitate freigegeben sind.]</p>
+        <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(min(270px,100%),1fr));gap:clamp(24px,3vw,40px)">
+          <div style="border-top:1px solid #1A1917;padding-top:22px;display:flex;flex-direction:column;gap:20px">
+            <div style="font-size:1.14rem;line-height:1.46;color:#1A1917">„[Zitat der Kundin oder des Kunden — zwei bis drei Zeilen, in eigenen Worten. Am besten mit einem konkreten Vorher/Nachher.]“</div>
+            <div style="font-size:.9rem;line-height:1.5;color:#5C5A54;margin-top:auto"><span style="display:block;font-weight:500;color:#1A1917">[Vorname Nachname]</span>[Funktion], [Firma]</div>
+          </div>
+          <div style="border-top:1px solid #1A1917;padding-top:22px;display:flex;flex-direction:column;gap:20px">
+            <div style="font-size:1.14rem;line-height:1.46;color:#1A1917">„[Zweites Zitat — idealerweise von einem Team anderer Grösse oder Branche, damit die Bandbreite sichtbar wird.]“</div>
+            <div style="font-size:.9rem;line-height:1.5;color:#5C5A54;margin-top:auto"><span style="display:block;font-weight:500;color:#1A1917">[Vorname Nachname]</span>[Funktion], [Firma]</div>
+          </div>
+          <div style="border-top:1px solid #1A1917;padding-top:22px;display:flex;flex-direction:column;gap:20px">
+            <div style="font-size:1.14rem;line-height:1.46;color:#1A1917">„[Drittes Zitat — oder diese Karte entfernen, wenn nur zwei Referenzen vorliegen.]“</div>
+            <div style="font-size:.9rem;line-height:1.5;color:#5C5A54;margin-top:auto"><span style="display:block;font-weight:500;color:#1A1917">[Vorname Nachname]</span>[Funktion], [Firma]</div>
+          </div>
+        </div>
+        <p style="margin:28px 0 0;font-size:.88rem;color:#8E8B84">[Hinweis, falls Referenzen anonymisiert sind — etwa: Namen auf Wunsch der Kundschaft gekürzt.]</p>
+      </div>
+    </section>
+
+    <section style="max-width:1180px;margin:0 auto;padding:clamp(56px,8vw,96px) clamp(20px,4vw,40px)">
+      <div style="font-size:12px;letter-spacing:.14em;text-transform:uppercase;color:#8E8B84;margin-bottom:20px"><span style="color:#C4653A;font-weight:600">06</span> &nbsp;Partner</div>
+      <h2 style="margin:0 0 clamp(36px,6vw,56px);font-size:clamp(1.7rem,3.4vw,2.5rem);font-weight:700;line-height:1.1;letter-spacing:-.03em;max-width:24ch;text-wrap:pretty">Wenn es über die Schulung hinausgeht.</h2>
+      <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(min(300px,100%),1fr));gap:clamp(32px,5vw,64px);align-items:start">
+        <div style="border-top:1px solid #1A1917;padding-top:26px">
+          <div style="display:inline-flex;background:#fff;border:1px solid #E2DDD4;border-radius:12px;padding:14px;margin-bottom:24px"><img src="simpliq.png" width="1000" height="1000" alt="simpliq gmbh" loading="lazy" decoding="async" style="width:64px;height:64px"></div>
+          <h3 style="margin:0 0 14px;font-size:1.4rem;font-weight:600;letter-spacing:-.024em">simpliq gmbh</h3>
+          <p style="margin:0 0 18px;font-size:1rem;line-height:1.62;color:#5C5A54;max-width:44ch">IT-Dienstleister aus dem Raum Bern mit Schwerpunkt auf Microsoft-Umgebungen: Cloud, Endgeräte und Transformation, unter anderem mit Azure, Microsoft 365, Teams und Intune. Wo eine Schulung an die Technik stösst, übernimmt simpliq die Umsetzung — von der Einrichtung bis zum laufenden Betrieb.</p>
+          <a href="https://simpliq.ch/" target="_blank" rel="noopener" style="font-size:.95rem;color:#5C5A54;text-decoration:none;border-bottom:1px solid #C4653A;padding-bottom:2px">simpliq.ch</a>
+        </div>
+        <div>
+          <div style="border-top:1px solid #E2DDD4;padding:22px 0">
+            <span style="display:block;font-size:1.02rem;font-weight:500;margin-bottom:6px">Ich übernehme</span>
+            <span style="font-size:.97rem;line-height:1.6;color:#5C5A54">Schulung, Struktur und die Begleitung der Menschen im Team.</span>
+          </div>
+          <div style="border-top:1px solid #E2DDD4;padding:22px 0">
+            <span style="display:block;font-size:1.02rem;font-weight:500;margin-bottom:6px">Der Partner übernimmt</span>
+            <span style="font-size:.97rem;line-height:1.6;color:#5C5A54">Einrichtung, Sicherheit und Betrieb der Microsoft-Umgebung. [Genauen Umfang mit simpliq abstimmen.]</span>
+          </div>
+          <div style="border-top:1px solid #E2DDD4;border-bottom:1px solid #E2DDD4;padding:22px 0">
+            <span style="display:block;font-size:1.02rem;font-weight:500;margin-bottom:6px">Sie haben</span>
+            <span style="font-size:.97rem;line-height:1.6;color:#5C5A54">Einen Ansprechpartner für beides — Sie müssen nicht zwei Offerten koordinieren.</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- KONTAKT — Formular ohne Server: baut im Browser eine mailto-Nachricht (siehe site.js) -->
+    <section id="kontakt" style="background:#fff">
+      <div style="max-width:1180px;margin:0 auto;padding:clamp(56px,8vw,96px) clamp(20px,4vw,40px);display:grid;grid-template-columns:repeat(auto-fit,minmax(min(300px,100%),1fr));gap:clamp(32px,5vw,64px);align-items:start">
+        <div>
+          <div style="font-size:12px;letter-spacing:.14em;text-transform:uppercase;color:#8E8B84;margin-bottom:20px"><span style="color:#C4653A;font-weight:600">07</span> &nbsp;Kontakt</div>
+          <h2 style="margin:0 0 20px;font-size:clamp(1.7rem,3.4vw,2.5rem);font-weight:700;line-height:1.1;letter-spacing:-.03em">Reden wir über Ihr Team.</h2>
+          <p style="margin:0 0 32px;font-size:1.06rem;line-height:1.64;color:#3D3B36;max-width:44ch">Erzählen Sie mir kurz, wo es hakt – ich melde mich innert zwei Arbeitstagen mit einer ehrlichen Einschätzung. Ganz ohne Verpflichtung.</p>
+          <div style="border-top:1px solid #E2DDD4;padding:18px 0;font-size:1rem">
+            <a href="mailto:info@collabatwork.ch" style="text-decoration:none;font-weight:500;border-bottom:1px solid #C4653A;padding-bottom:2px">info@collabatwork.ch</a>
+          </div>
+          <div style="border-top:1px solid #E2DDD4;padding:18px 0;font-size:1rem;color:#5C5A54">Vor Ort mit Fokus Kanton Bern – online in der ganzen Schweiz</div>
+          <div style="border-top:1px solid #E2DDD4;border-bottom:1px solid #E2DDD4;padding:18px 0;font-size:1rem;color:#5C5A54">Schulungen auf Deutsch und Englisch</div>
+        </div>
+        <div>
+          
+            <form data-mailto="info@collabatwork.ch" data-labels='{"name":"Name","firma":"Unternehmen","email":"E-Mail","groesse":"Teamgrösse","thema":"Thema","msg":"Nachricht","none":"keine Angabe","subject":"Anfrage Teams-Schulung","copy":"Angaben kopieren","copied":"Kopiert"}' novalidate style="background:#fff;border:1px solid #E2DDD4;border-radius:16px;padding:clamp(22px,4vw,34px);display:flex;flex-direction:column;gap:18px">
+              <div style="position:absolute;left:-9999px" aria-hidden="true"><input name="website" type="text" tabindex="-1" autocomplete="off"></div>
+              <div>
+                <label for="cw-name" style="display:block;font-size:.86rem;font-weight:500;margin-bottom:7px">Ihr Name</label>
+                <input id="cw-name" name="name" type="text" placeholder="Vor- und Nachname" autocomplete="name" style="width:100%;padding:12px 14px;border:1px solid #E2DDD4;font-family:inherit;font-size:1rem;background:#FAF7F2;color:#1A1917;border-radius:9px">
+              </div>
+              <div>
+                <label for="cw-firma" style="display:block;font-size:.86rem;font-weight:500;margin-bottom:7px">Unternehmen</label>
+                <input id="cw-firma" name="firma" type="text" placeholder="Firmenname" autocomplete="organization" style="width:100%;padding:12px 14px;border:1px solid #E2DDD4;font-family:inherit;font-size:1rem;background:#FAF7F2;color:#1A1917;border-radius:9px">
+              </div>
+              <div>
+                <label for="cw-groesse" style="display:block;font-size:.86rem;font-weight:500;margin-bottom:7px">Teamgrösse</label>
+                <select id="cw-groesse" name="groesse" style="width:100%;padding:12px 14px;border:1px solid #E2DDD4;font-family:inherit;font-size:1rem;background:#FAF7F2;color:#1A1917;border-radius:9px">
+                  <option value="">Bitte wählen …</option>
+                  <option>Bis 10 Personen</option>
+                  <option>11 bis 25 Personen</option>
+                  <option>26 bis 50 Personen</option>
+                  <option>Mehr als 50 Personen</option>
+                </select>
+              </div>
+              <div>
+                <label for="cw-email" style="display:block;font-size:.86rem;font-weight:500;margin-bottom:7px">E-Mail</label>
+                <input id="cw-email" name="email" type="email" placeholder="name@firma.ch" autocomplete="email" style="width:100%;padding:12px 14px;border:1px solid #E2DDD4;font-family:inherit;font-size:1rem;background:#FAF7F2;color:#1A1917;border-radius:9px">
+              </div>
+              <div>
+                <label for="cw-thema" style="display:block;font-size:.86rem;font-weight:500;margin-bottom:7px">Worum geht's?</label>
+                <select id="cw-thema" name="thema" style="width:100%;padding:12px 14px;border:1px solid #E2DDD4;font-family:inherit;font-size:1rem;background:#FAF7F2;color:#1A1917;border-radius:9px">
+                  <option value="">Bitte wählen …</option>
+                  <option>Teams-Grundlagen</option>
+                  <option>Struktur &amp; Einführung</option>
+                  <option>Zusammenarbeit mit Externen</option>
+                  <option>Noch unklar – beraten Sie mich</option>
+                </select>
+              </div>
+              <div>
+                <label for="cw-msg" style="display:block;font-size:.86rem;font-weight:500;margin-bottom:7px">Ihre Nachricht</label>
+                <textarea id="cw-msg" name="msg" placeholder="Wo klemmt es gerade?" style="width:100%;padding:12px 14px;border:1px solid #E2DDD4;font-family:inherit;font-size:1rem;background:#fff;color:#1A1917;min-height:120px;resize:vertical;border-radius:9px"></textarea>
+              </div>
+              
+                <div class="cw-err" hidden style="font-size:.9rem;color:#A34E29;background:#F7EBE4;border-radius:9px;padding:11px 14px">Bitte Name, Unternehmen, eine gültige E-Mail-Adresse und eine kurze Nachricht ausfüllen.</div>
+              
+              <button type="submit" style="background:#1A1917;color:#fff;border:none;padding:16px;border-radius:9px;font-family:inherit;font-size:1.02rem;font-weight:600;cursor:pointer">Anfrage per E-Mail senden</button>
+              <p style="margin:0;font-size:.82rem;line-height:1.55;color:#8E8B84">Ihre Angaben werden in Ihr E-Mail-Programm übertragen. Dort noch auf «Senden» klicken – ich melde mich innert zwei Arbeitstagen.</p>
+            </form>
+          
+          
+            <div class="cw-done" hidden style="background:#fff;border:1px solid #1A1917;border-radius:16px;padding:clamp(22px,4vw,34px);display:flex;flex-direction:column;gap:16px">
+              <div style="font-size:1.08rem;font-weight:500">Ihr E-Mail-Programm sollte sich geöffnet haben.</div>
+              <p style="margin:0;font-size:.97rem;line-height:1.62;color:#5C5A54">Dort steht Ihre Anfrage bereits fertig — Sie müssen nur noch auf «Senden» klicken. Falls sich nichts geöffnet hat, kopieren Sie die Angaben und schicken sie an <a href="mailto:info@collabatwork.ch">info@collabatwork.ch</a>.</p>
+              <div style="display:flex;gap:12px;flex-wrap:wrap">
+                <button type="button" data-copy style="background:#1A1917;color:#fff;border:none;padding:11px 20px;border-radius:8px;font-family:inherit;font-size:.92rem;font-weight:500;cursor:pointer">Angaben kopieren</button>
+                <button type="button" data-reset style="background:none;color:#1A1917;border:1px solid #E2DDD4;padding:11px 20px;border-radius:8px;font-family:inherit;font-size:.92rem;cursor:pointer">Neue Anfrage</button>
+              </div>
+            </div>
+          
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- FUSSZEILE — Rechtsseiten und Sprachwechsel -->
+    <footer style="border-top:1px solid #E2DDD4">
+    <div style="max-width:1180px;margin:0 auto;padding:clamp(38px,6vw,52px) clamp(20px,4vw,40px);display:flex;justify-content:space-between;align-items:flex-start;flex-wrap:wrap;gap:28px">
+      <div style="display:flex;flex-direction:column;gap:10px">
+        <a href="#top" style="display:flex;align-items:center;gap:9px;text-decoration:none">
+          <svg width="24" height="24" viewBox="0 0 100 100" fill="none" aria-hidden="true"><path d="M69 17.1A38 38 0 1 0 69 82.9" stroke="#1A1917" stroke-width="12" stroke-linecap="round"></path><path d="M44 32 66 50 44 68" stroke="#C4653A" stroke-width="12" stroke-linecap="round" stroke-linejoin="round"></path></svg>
+          <span style="font-size:17px;font-weight:600;letter-spacing:-.025em">collab<span style="color:#C4653A">atwork</span></span>
+        </a>
+        <span style="font-size:.86rem;color:#8E8B84">Microsoft-Teams-Schulungen für KMU · Fokus Bern, tätig in der ganzen Schweiz</span>
+      </div>
+      <div style="display:flex;flex-direction:column;gap:9px;font-size:.9rem">
+        <a href="rechtliches.html" style="text-decoration:none;color:#5C5A54">Impressum</a>
+        <a href="rechtliches.html#datenschutz" style="text-decoration:none;color:#5C5A54">Datenschutz</a>
+        <a href="mailto:info@collabatwork.ch" style="text-decoration:none;color:#5C5A54">Kontakt</a>
+        <a href="en.html" style="text-decoration:none;color:#5C5A54">English</a>
+      </div>
+      <div style="font-size:.8rem;color:#A19E97;line-height:1.6">© 2026 collabatwork – Timo Steinlin<br>Alle Rechte vorbehalten</div>
+    </div>
+  </footer>
+
+</div>
+<script src="site.js" defer></script>
+</body>
+</html>
