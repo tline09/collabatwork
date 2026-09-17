@@ -1,40 +1,71 @@
 # collabatwork.ch — Website
 
-Statische Website, kein Server-Code. Alles im Ordner hochladen, fertig.
+Statische Website, kein Server-Code. Alle Dateien dieses Ordners ins Web-Verzeichnis
+hochladen, fertig. Hosting: Infomaniak, Schweiz.
 
 ## Dateien
 
 | Datei | Inhalt |
 | --- | --- |
-| `index.html` | Startseite Deutsch |
+| `index.html` | Startseite Deutsch — Einstiegsseite von collabatwork.ch |
 | `en.html` | Startseite Englisch |
+| `werte.html` | Werteseite Deutsch — sieben Grundsätze der Zusammenarbeit |
+| `values.html` | Werteseite Englisch |
+| `agb.html` | Allgemeine Geschäftsbedingungen (DE) |
+| `terms.html` | Terms and conditions (EN) |
 | `rechtliches.html` | Impressum und Datenschutz (DE) |
 | `legal.html` | Legal notice and privacy (EN) |
 | `style.css` | Übergreifende Regeln: Grundlagen, mobiles Menü, Hover, Rechtsseiten |
 | `site.js` | Mobiles Menü und Kontaktformular |
 | `timo.webp` | Porträt, 533 × 800 px |
+| `simpliq.png` | Logo des Partners, im Partnerabschnitt der Startseiten |
 
-Gesamtgrösse rund 175 KB. Keine externen Verbindungen: keine Google Fonts, kein
+Gesamtgrösse rund 200 KB. Keine externen Verbindungen: keine Google Fonts, kein
 Analyse-Werkzeug, keine Cookies. Das ist die Grundlage für die Aussagen im
 Datenschutztext — bitte beim Ergänzen von Diensten dort nachführen.
 
-## Wo was steht
+## Seitenstruktur
 
-Beide Startseiten haben denselben Aufbau, oben im Dokument als Kommentar
-beschrieben, dazu eine Marke vor jedem Abschnitt:
+Deutsch und Englisch sind Zwillinge. **Jede inhaltliche Änderung gehört in beide
+Dateien.** Die Sprachpaare: `index` ↔ `en`, `werte` ↔ `values`,
+`agb` ↔ `terms`, `rechtliches` ↔ `legal`.
 
-1. Kopfzeile
-2. Startbereich (Schlagzeile, zwei Knöpfe, Angebotsleiste)
-3. Warum — Antrieb
-4. Zitatfeld (dunkel)
-5. Kommt Ihnen bekannt vor? — drei Situationen
-6. Wie — vier Schritte
-7. Was — drei Angebote
-8. Über mich
-9. Referenzen (noch Platzhalter in eckigen Klammern)
-10. Partner (noch Platzhalter)
-11. Kontakt
-12. Fusszeile
+```
+index.html / en.html          Startseite
+  ├── werte.html / values.html    verlinkt aus dem Angebot und der Fusszeile
+  ├── agb.html / terms.html       Fusszeile
+  └── rechtliches.html / legal.html   Fusszeile (Datenschutz über #datenschutz / #privacy)
+```
+
+## Aufbau der Startseite
+
+Oben im Dokument steht ein Kopfkommentar, vor jedem Abschnitt eine Marke:
+
+1. Entwurfsband (dunkel, ganz oben)
+2. Kopfzeile
+3. Startbereich — Signet als Wasserzeichen, Schlagzeile, zwei Knöpfe, Angebotsleiste
+4. Warum — Antrieb
+5. Zitatfeld (dunkel)
+6. Kommt Ihnen bekannt vor? — drei Situationen
+7. Wie — vier Schritte (Kennenlernen, Konzept, Schulung, Dranbleiben)
+8. Was — Standortbestimmung, drei Angebote, Verweis auf die Werte
+9. Über mich
+10. Referenzen (noch Platzhalter in eckigen Klammern)
+11. Partner — simpliq gmbh
+12. Kontakt — Angaben und Formular
+13. Fusszeile
+
+Die drei Angebote: **01 Teams-Grundlagen**, **02 Struktur, Ablage und Externe**,
+**03 Teams-Telefonie**. Nummern und Reihenfolge hängen zusammen — wird ein Angebot
+entfernt, sind die folgenden Nummern anzupassen, ebenso die Auswahl im Formular
+(`<select name="thema">`).
+
+## Aufbau der Werteseite
+
+Sieben Zeilen, jede in drei Spalten: links Nummer, Name und Kernsatz, daneben
+«Was ich einbringe» und «Was es von Ihnen braucht». Dieselbe Form wie die
+Angebotszeilen der Startseite. Die erste Zeile trägt eine kräftige Haarlinie
+`#1A1917`, alle weiteren `#E2DDD4`. Die Seite braucht `site.js` nicht.
 
 ## Gestaltung
 
@@ -45,7 +76,10 @@ beschrieben, dazu eine Marke vor jedem Abschnitt:
 - **Raster**: Inhaltsbreite maximal 1180 px, Seitenrand `clamp(20px,4vw,40px)`,
   Abschnittsabstand `clamp(56px,8vw,96px)`.
 - **Radien**: 9 px an Feldern und Knöpfen, 12 px am Bild, 16 px an Kästen.
-- **Umbruchpunkt**: 860 px. Darunter erscheint der Menüknopf, die Navigation wird ausgeblendet.
+- **Gliederung**: Farbwechsel zwischen Sand und Weiss trennt die Abschnitte.
+  Haarlinien nur dort, wo sie etwas zusammenhalten — nicht als Dekoration.
+- **Umbruchpunkt**: 860 px. Darunter erscheint der Menüknopf, die Navigation wird
+  ausgeblendet, der Sprachwechsel bleibt als eigener Knopf daneben sichtbar.
 
 Die Stile stehen absichtlich inline im Markup. Grund: die Seite wird ohne zweite
 Netzanfrage dargestellt. `style.css` enthält nur, was inline nicht geht —
@@ -64,13 +98,28 @@ ist es gefüllt, bricht das Skript ab.
 Sobald PHP verfügbar ist, kann das Formular auf einen echten Versand umgestellt
 werden. Dann ist der Absatz «Kontaktformular» im Datenschutz anzupassen.
 
-## Sprachen
+## Sprache und Ansprache
 
-Beide Seiten verweisen mit `hreflang` gegenseitig aufeinander, Deutsch ist die
-Startseite. Jede inhaltliche Änderung gehört in beide Dateien.
+Deutsch ist die Einstiegsseite, beide Sprachen verweisen mit `hreflang`
+gegenseitig aufeinander. Durchgehend Sie-Form, auch auf der Werteseite.
+Schreibweise der Marke immer klein: **collabatwork**. Kontaktadresse überall
+`info@collabatwork.ch`.
 
 ## Offene Punkte
 
-- Referenzen und Partner sind Platzhalter in eckigen Klammern. Solange sie stehen,
-  bleibt das Entwurfsband oben sichtbar.
-- Das Entwurfsband ist der erste `<div>` im `<body>`, zum Entfernen ersatzlos löschen.
+- **Referenzen** sind Platzhalter in eckigen Klammern. Solange sie stehen, bleibt
+  das Entwurfsband oben sichtbar.
+- **Entwurfsband** ist der erste `<div>` im `<body>` jeder Seite, zum Entfernen
+  ersatzlos löschen — auf allen acht Seiten.
+- **AGB und Datenschutz** sind Entwürfe und als solche gekennzeichnet. Vor dem
+  scharfen Betrieb rechtlich prüfen lassen, besonders Haftung, Absagefristen
+  und Gerichtsstand.
+- **Rechtsseiten** tragen `<meta name="robots" content="noindex">`, erscheinen
+  also nicht in Suchergebnissen. Startseiten und Werteseiten sind indexiert.
+
+## Arbeitsfassungen
+
+Die Seiten entstehen aus `collabatwork DE v4.dc.html` und
+`collabatwork EN v4.dc.html` im übergeordneten Projekt. Änderungen dort zuerst,
+danach in dieses Paket übertragen. Beide Wege führen zum selben Markup; die
+Dateien hier sind die, die hochgeladen werden.
