@@ -1,0 +1,8 @@
+User-agent: *
+Allow: /
+Disallow: /rechtliches.html
+Disallow: /legal.html
+Disallow: /agb.html
+Disallow: /terms.html
+
+Sitemap: https://collabatwork.ch/sitemap.xml

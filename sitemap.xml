@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:xhtml="http://www.w3.org/1999/xhtml">
+  <url>
+    <loc>https://collabatwork.ch/</loc>
+    <xhtml:link rel="alternate" hreflang="de" href="https://collabatwork.ch/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://collabatwork.ch/en.html"/>
+    <lastmod>2026-09-18</lastmod>
+    <priority>1.0</priority>
+  </url>
+  <url>
+    <loc>https://collabatwork.ch/en.html</loc>
+    <xhtml:link rel="alternate" hreflang="de" href="https://collabatwork.ch/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://collabatwork.ch/en.html"/>
+    <lastmod>2026-09-18</lastmod>
+    <priority>0.9</priority>
+  </url>
+  <url>
+    <loc>https://collabatwork.ch/werte.html</loc>
+    <xhtml:link rel="alternate" hreflang="de" href="https://collabatwork.ch/werte.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://collabatwork.ch/values.html"/>
+    <lastmod>2026-09-18</lastmod>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://collabatwork.ch/values.html</loc>
+    <xhtml:link rel="alternate" hreflang="de" href="https://collabatwork.ch/werte.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://collabatwork.ch/values.html"/>
+    <lastmod>2026-09-18</lastmod>
+    <priority>0.5</priority>
+  </url>
+</urlset>

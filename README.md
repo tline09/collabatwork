@@ -9,7 +9,7 @@ hochladen, fertig. Hosting: Infomaniak, Schweiz.
 | --- | --- |
 | `index.html` | Startseite Deutsch — Einstiegsseite von collabatwork.ch |
 | `en.html` | Startseite Englisch |
-| `werte.html` | Werteseite Deutsch — sieben Grundsätze der Zusammenarbeit |
+| `werte.html` | Werteseite Deutsch — sechs Grundsätze der Zusammenarbeit |
 | `values.html` | Werteseite Englisch |
 | `agb.html` | Allgemeine Geschäftsbedingungen (DE) |
 | `terms.html` | Terms and conditions (EN) |
@@ -19,8 +19,12 @@ hochladen, fertig. Hosting: Infomaniak, Schweiz.
 | `site.js` | Mobiles Menü und Kontaktformular |
 | `timo.webp` | Porträt, 533 × 800 px |
 | `simpliq.png` | Logo des Partners, im Partnerabschnitt der Startseiten |
+| `404.html` | Fehlerseite, zweisprachig — bei Infomaniak als ErrorDocument eintragen |
+| `vorschau.png` | Vorschaubild beim Teilen des Links, 1200 × 630 px |
+| `sitemap.xml` | die vier öffentlichen Seiten für Suchmaschinen |
+| `robots.txt` | erlaubt alles ausser Impressum, Datenschutz und AGB |
 
-Gesamtgrösse rund 200 KB. Keine externen Verbindungen: keine Google Fonts, kein
+Gesamtgrösse rund 260 KB. Keine externen Verbindungen: keine Google Fonts, kein
 Analyse-Werkzeug, keine Cookies. Das ist die Grundlage für die Aussagen im
 Datenschutztext — bitte beim Ergänzen von Diensten dort nachführen.
 
@@ -44,16 +48,15 @@ Oben im Dokument steht ein Kopfkommentar, vor jedem Abschnitt eine Marke:
 1. Entwurfsband (dunkel, ganz oben)
 2. Kopfzeile
 3. Startbereich — Signet als Wasserzeichen, Schlagzeile, zwei Knöpfe, Angebotsleiste
-4. Warum — Antrieb
-5. Zitatfeld (dunkel)
-6. Kommt Ihnen bekannt vor? — drei Situationen
-7. Wie — vier Schritte (Kennenlernen, Konzept, Schulung, Dranbleiben)
-8. Was — Standortbestimmung, drei Angebote, Verweis auf die Werte
-9. Über mich
-10. Referenzen (noch Platzhalter in eckigen Klammern)
-11. Partner — simpliq gmbh
-12. Kontakt — Angaben und Formular
-13. Fusszeile
+4. Warum — Antrieb (Haarlinie oben, sonst dieselbe Fläche wie der Startbereich)
+5. Kommt Ihnen bekannt vor? — drei Situationen
+6. Wie — vier Schritte (Kennenlernen, Konzept, Schulung, Dranbleiben)
+7. Was — Standortbestimmung, drei Angebote, Verweis auf die Werte
+8. Über mich — Porträt, Werdegang, Slogan als Abschluss
+9. Referenzen (noch Platzhalter in eckigen Klammern)
+10. Partner — Netzwerk, dazu simpliq gmbh als Partner für die Technik
+11. Kontakt — Angaben und Formular
+12. Fusszeile
 
 Die drei Angebote: **01 Teams-Grundlagen**, **02 Struktur, Ablage und Externe**,
 **03 Teams-Telefonie**. Nummern und Reihenfolge hängen zusammen — wird ein Angebot
@@ -62,7 +65,7 @@ entfernt, sind die folgenden Nummern anzupassen, ebenso die Auswahl im Formular
 
 ## Aufbau der Werteseite
 
-Sieben Zeilen, jede in drei Spalten: links Nummer, Name und Kernsatz, daneben
+Sechs Zeilen, jede in drei Spalten: links Nummer, Name und Kernsatz, daneben
 «Was ich einbringe» und «Was es von Ihnen braucht». Dieselbe Form wie die
 Angebotszeilen der Startseite. Die erste Zeile trägt eine kräftige Haarlinie
 `#1A1917`, alle weiteren `#E2DDD4`. Die Seite braucht `site.js` nicht.
@@ -76,7 +79,10 @@ Angebotszeilen der Startseite. Die erste Zeile trägt eine kräftige Haarlinie
 - **Raster**: Inhaltsbreite maximal 1180 px, Seitenrand `clamp(20px,4vw,40px)`,
   Abschnittsabstand `clamp(56px,8vw,96px)`.
 - **Radien**: 9 px an Feldern und Knöpfen, 12 px am Bild, 16 px an Kästen.
-- **Gliederung**: Farbwechsel zwischen Sand und Weiss trennt die Abschnitte.
+- **Gliederung**: Farbwechsel zwischen Sand und Weiss trennt die Abschnitte; keine
+  zwei gleichen Flächen stossen aneinander. Reihenfolge: Sand (Start, Warum) ·
+  Weiss (Situationen) · Sand (Wie) · Weiss (Angebot) · Beige `#F2E9DF` (Über mich) ·
+  Weiss (Referenzen) · Sand (Partner) · Weiss (Kontakt).
   Haarlinien nur dort, wo sie etwas zusammenhalten — nicht als Dekoration.
 - **Umbruchpunkt**: 860 px. Darunter erscheint der Menüknopf, die Navigation wird
   ausgeblendet, der Sprachwechsel bleibt als eigener Knopf daneben sichtbar.
