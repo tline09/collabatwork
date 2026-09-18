@@ -94,8 +94,10 @@ Grundlagen, Zustände beim Überfahren, das mobile Menü und die Rechtsseiten.
 
 Kein PHP, kein Formulardienst. Beim Absenden setzt `site.js` aus den Feldern eine
 Nachricht zusammen und öffnet sie über `mailto:` im E-Mail-Programm des Besuchers.
-Abgeschickt wird sie erst dort. Beschriftungen für Betreff und Zeilen stehen im
-Attribut `data-labels` am `<form>`-Element, die Empfängeradresse in `data-mailto`.
+Abgeschickt wird sie erst dort — darum steht der Hinweis unter dem Knopf
+hervorgehoben in Rostorange `#A34E29`. Beschriftungen für Betreff und Zeilen
+stehen im Attribut `data-labels` am `<form>`-Element, die Empfängeradresse in
+`data-mailto`.
 
 Ein verstecktes Feld `website` dient als Köder gegen automatische Einsendungen:
 ist es gefüllt, bricht das Skript ab.
@@ -121,7 +123,10 @@ Schreibweise der Marke immer klein: **collabatwork**. Kontaktadresse überall
   Absagefristen und Gerichtsstand.
 - **Handelsregister**: die Zeile «Nicht im Handelsregister eingetragen» in
   `rechtliches.html` und `legal.html` gegen Eintrag und UID tauschen, sobald
-  der Auszug da ist.
+  der Auszug da ist. Firma: «collabatwork - Timo Steinlin», Sitz Köniz.
+- **Auftragsbearbeiter**: der Datenschutz nennt agency-atelier für Offerten,
+  Zeiterfassung und Fakturierung. Bei einem Anbieterwechsel diesen Abschnitt in
+  `rechtliches.html` und `legal.html` anpassen (die AGB nennen keinen Namen).
 - **Rechtsseiten** tragen `<meta name="robots" content="noindex">`, erscheinen
   also nicht in Suchergebnissen. Startseiten und Werteseiten sind indexiert.
 
