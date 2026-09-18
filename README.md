@@ -45,18 +45,17 @@ index.html / en.html          Startseite
 
 Oben im Dokument steht ein Kopfkommentar, vor jedem Abschnitt eine Marke:
 
-1. Entwurfsband (dunkel, ganz oben)
-2. Kopfzeile
-3. Startbereich — Signet als Wasserzeichen, Schlagzeile, zwei Knöpfe, Angebotsleiste
-4. Warum — Antrieb (Haarlinie oben, sonst dieselbe Fläche wie der Startbereich)
-5. Kommt Ihnen bekannt vor? — drei Situationen
-6. Wie — vier Schritte (Kennenlernen, Konzept, Schulung, Dranbleiben)
-7. Was — Standortbestimmung, drei Angebote, Verweis auf die Werte
-8. Über mich — Porträt, Werdegang, Slogan als Abschluss
-9. Referenzen (noch Platzhalter in eckigen Klammern)
-10. Partner — Netzwerk, dazu simpliq gmbh als Partner für die Technik
-11. Kontakt — Angaben und Formular
-12. Fusszeile
+1. Kopfzeile
+2. Startbereich — Signet als Wasserzeichen, Schlagzeile, zwei Knöpfe, Angebotsleiste
+3. Warum — Antrieb (Haarlinie oben, sonst dieselbe Fläche wie der Startbereich)
+4. Kommt Ihnen bekannt vor? — drei Situationen
+5. Wie — vier Schritte (Kennenlernen, Konzept, Schulung, Dranbleiben)
+6. Was — Standortbestimmung, drei Angebote, Verweis auf die Werte
+7. Über mich — Porträt, Werdegang, Slogan als Abschluss
+8. Referenzen (noch Platzhalter in eckigen Klammern)
+9. Partner — Netzwerk, dazu simpliq gmbh als Partner für die Technik
+10. Kontakt — Angaben und Formular
+11. Fusszeile
 
 Die drei Angebote: **01 Teams-Grundlagen**, **02 Struktur, Ablage und Externe**,
 **03 Teams-Telefonie**. Nummern und Reihenfolge hängen zusammen — wird ein Angebot
@@ -82,7 +81,7 @@ Angebotszeilen der Startseite. Die erste Zeile trägt eine kräftige Haarlinie
 - **Gliederung**: Farbwechsel zwischen Sand und Weiss trennt die Abschnitte; keine
   zwei gleichen Flächen stossen aneinander. Reihenfolge: Sand (Start, Warum) ·
   Weiss (Situationen) · Sand (Wie) · Weiss (Angebot) · Beige `#F2E9DF` (Über mich) ·
-  Weiss (Referenzen) · Sand (Partner) · Weiss (Kontakt).
+  Sand (Partner) · Weiss (Kontakt).
   Haarlinien nur dort, wo sie etwas zusammenhalten — nicht als Dekoration.
 - **Umbruchpunkt**: 860 px. Darunter erscheint der Menüknopf, die Navigation wird
   ausgeblendet, der Sprachwechsel bleibt als eigener Knopf daneben sichtbar.
@@ -113,13 +112,16 @@ Schreibweise der Marke immer klein: **collabatwork**. Kontaktadresse überall
 
 ## Offene Punkte
 
-- **Referenzen** sind Platzhalter in eckigen Klammern. Solange sie stehen, bleibt
-  das Entwurfsband oben sichtbar.
-- **Entwurfsband** ist der erste `<div>` im `<body>` jeder Seite, zum Entfernen
-  ersatzlos löschen — auf allen acht Seiten.
-- **AGB und Datenschutz** sind Entwürfe und als solche gekennzeichnet. Vor dem
-  scharfen Betrieb rechtlich prüfen lassen, besonders Haftung, Absagefristen
-  und Gerichtsstand.
+- **Referenzen**: der Abschnitt ist vor dem Live-Gang entfernt worden, weil keine
+  freigegebenen Zitate vorlagen. Das Markup liegt als `referenzen-de.html.txt`
+  und `referenzen-en.html.txt` im Projektstamm und kann mit echten Namen wieder
+  zwischen «Über mich» und «Partner» eingesetzt werden; die Nummern 05 und 06
+  wandern dann auf 06 und 07.
+- **AGB und Datenschutz** sollten rechtlich geprüft werden, besonders Haftung,
+  Absagefristen und Gerichtsstand.
+- **Handelsregister**: die Zeile «Nicht im Handelsregister eingetragen» in
+  `rechtliches.html` und `legal.html` gegen Eintrag und UID tauschen, sobald
+  der Auszug da ist.
 - **Rechtsseiten** tragen `<meta name="robots" content="noindex">`, erscheinen
   also nicht in Suchergebnissen. Startseiten und Werteseiten sind indexiert.
 
